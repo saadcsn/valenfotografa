@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valen Fotografías</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <ul>
+                    <li><a href="#home"><img src="img/LogoPagina1.png" alt="Logo" /></a></li>
+                </ul>
+            </div>
+            <ul class="nav-links hidden" id="navLinks">
+                <li ><a href="#about" style="margin-right: 5rem;">Sobre mí</a></li>
+                <li><a href="#gallery" style="margin-right: 5rem;">Catálogo</a></li>
+                <li><a href="#contact" style="margin-right: 2rem;">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Contenido principal -->
+    </main>
+</body>
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-text" >
+                    <h1>VALEN<br>FOTOGRAFIAS</h1>
+                    <p>FOTOGRAFIAR ES ETERNIZAR UN SEGUNDO</p>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container" >
+                <img src="img/ValePNG.png" alt="Imagen PNG" />
+                <h2>SOBRE MI</h2>
+                <p>¡Hola! Soy Valentina. <br>
+                    Desde pequeña he tenido una gran pasión por la fotografía, y <br>
+                    ahora estoy cumpliendo mi sueño de dedicarme a ella. Disfruto <br>
+                    capturando diversos estilos, aunque tengo una inclinación <br>
+                    especial por la moda. <br>
+                    <br>
+                    Me encanta poder capturar momentos y convertirlos en <br>
+                    recuerdos que perduren en el tiempo. Si te gusta mi estilo y <br>
+                    crees que puedo ayudarte a crear algo único, estaré encantada <br>
+                    de conocerte y trabajar juntos. <br>
+                </p>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="container" >
+                <h2>CATÁLOGO</h2>
+                <div class="gallery-wrapper">
+                    <div class="espaciador"></div>
+                    <button class="prev" onclick="scrollGallery(-1)">&#10094;</button>
+                    <div class="gallery-grid" id="galleryGrid">
+                        
+                        <a href="persona.html">
+                            <img src="img/RetratosyExteriores.jpg" width="440px" height="550px" alt="Gallery Image 1">
+                            <div class="image-title">Retratos y Exteriores</div>
+                        </a>
+                        <a href="productos.html">
+                            <img src="img/Producto.jpg" width="440px" height="550px" alt="Gallery Image 2">
+                            <div class="image-title">Productos</div>
+                        </a>
+                        <a href="moda.html">
+                            <img src="img/Moda.jpg" width="440px" height="550px" alt="Gallery Image 3">
+                            <div class="image-title">Moda</div>
+                        </a>
+                        <a href="eventos.html">
+                            <img src="img/Evento.jpg" width="400px" height="550px" alt="Gallery Image 4">
+                            <div class="image-title">Eventos</div>
+                        </a>
+                        <a href="naturaleza.html">
+                            <img src="img/Naturaleza.jpg" width="400px" height="550px" alt="Gallery Image 5">
+                            <div class="image-title">Naturaleza</div>
+                        </a>
+                        <a href="embarazo.html">
+                            <img src="img/Persona.jpg" width="400px" height="550px" alt="Gallery Image 5">
+                            <div class="image-title">Embarazo y Familia</div>
+                        </a>
+                        <div class="espaciador"></div>
+                    </div>
+                    <button class="next" onclick="scrollGallery(1)">&#10095;</button>
+                </div>
+                <div class="espaciador"></div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact">
+            <h2>CONTACTO</h2>
+            <p style="margin-bottom: 50px;">Por cualquier consulta no dudes en comunicarte:</p>
+            <div class="contact-buttons">
+                <!-- Fila 1 -->
+                <div class="contact-row">
+                    <a href="https://www.instagram.com/valen.fotografa/" class="contact-button instagram" target="_blank">
+                        <i class="fab fa-instagram"></i> INSTAGRAM
+                    </a>
+                    <span>Sígueme en Instagram:<br> @valen.fotografa</span>
+                </div>
+                <!-- Fila 2 -->
+                <div class="contact-row">
+                    <a href="mailto:valen.fotografa@gmail.com" class="contact-button gmail" target="_blank">
+                        <i class="fas fa-envelope"></i> MAIL
+                    </a>
+                    <span>Escríbeme un correo:<br> valen.fotografa@gmail.com</span>
+                </div>
+                <!-- Fila 3 -->
+                <div class="contact-row">
+                    <a href="https://www.istockphoto.com/portfolio/ValentinaRPietrafesa?sort=purerecency&assettype=image" class="contact-button istock" target="_blank">
+                        <i class="fas fa-camera"></i> ISTOCK
+                    </a>
+                    <span>Encuentra mis fotos en iStock</span>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <!-- Sección: Sobre Nosotros -->
+        <div class="footer-about">
+          <h3 class="footer-title">WEB SAAD</h3>
+          <p class="footer-description">
+            boombayahaja
+          </p>
+        </div>
+  
+        <!-- Sección: Enlaces Rápidos -->
+        <div class="footer-links">
+          <h4 class="footer-subtitle">Enlaces Rápidos</h4>
+          <ul class="footer-list">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#gallery">Catálogo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#about">Sobre Mi</a></li>
+          </ul>
+        </div>
+  
+        <!-- Sección: Redes Sociales -->
+        <div class="footer-socials">
+          <h4 class="footer-subtitle">Síguenos</h4>
+          <ul class="footer-social-icons">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.x.com" target="_blank"><i class="fab fa-x"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/web_saad/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+  
+        
+      </div>
+  
+      <!-- Información Legal -->
+      <div class="footer-legal">
+        <p>&copy; 2024 WEB SAAD. Todos los derechos reservados.</p>
+        <p>Dirección: Montevideo, Uruguay | Teléfono: +598 98 036 544| Email: <a href="saad.webstudio@gmail.com">saad.webstudio@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="scripti.js"></script>
+
+
+</body>
+
+</html>

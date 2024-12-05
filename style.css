@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@font-face {
+    font-family: Bold, Fat, Retro, Serif, Slab, Western, Wood Type, Woodcut;
+    src: url(fuentes/ChunkFive-Regular.otf);
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    background-image: url('img/FondoDePaginas.jpg');
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: rgba(153, 153, 153, 0.116);
+    box-shadow: 3px 3px  rgba(237, 235, 218, 255);
+    padding: 0.625rem 1.875rem;
+    font-size: clamp(0.8rem, 2.5vw, 2.188rem);
+}
+
+.logo img {
+    width: clamp(9rem, 11vw, 20rem);
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.navbar li {
+    
+    margin-left: 1rem;
+}
+
+.navbar ul li :hover{
+    background-color: rgba(255, 255, 255, 0.26);
+    transform: scale(1.05);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(237, 235, 218, 255);
+    font-weight: bold;
+    transition: color 0.2.8s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1.05);
+    border-radius: 10%;
+}
+.navbar .logo a:hover {
+    background-color: #ffffff00;
+}
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(237, 235, 218, 255);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero {
+    background-image: url('img/ImagenPrincipal.jpg');
+    background-position: center top;
+    background-size: cover;
+    letter-spacing: 5px;
+    max-width: 100%;
+}
+
+h2 {
+    margin-top: 0;
+}
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-toggle {
+    right: 0;
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: rgba(237, 235, 218, 255);
+    cursor: pointer;
+}
+.about {
+    background-image: url('img/FondoDePaginas.jpg');
+    position: relative;
+    font-size: clamp(0.8rem, 2.5vw, 2.188rem);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+}
+
+.about h2 {
+    position: absolute; /* Lo posiciona dentro del contenedor */
+    top: 4%; /* Lo coloca en la parte superior de la sección */
+    left: 50%; /* Centra el elemento horizontalmente */
+    transform: translateX(-50%) translateY(70%); /* Ajusta para que el texto quede perfectamente centrado */
+    text-align: center; /* Centra el texto */
+    color: rgba(237, 235, 218, 255); /* Color blanco */
+    font-size: clamp(1.5rem, 4vw, 8.2rem); /* Ajusta el tamaño de la fuente */
+    margin-top: 2rem; /* Ajusta el espacio desde la parte superior */
+}
+
+
+.about .container {
+    max-width: 100%;
+    text-align: right;
+    padding-right: 0.780rem;
+}
+
+.about img {
+    position: absolute;
+    left: 0;
+    top: 25%; /* Usar porcentaje para la posición superior */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-height: 75vh; /* Limitar la altura al 70% de la ventana visible */
+    width: 28%; /* Ajustar el ancho al tamaño del contenedor */
+    object-fit: cover; /* Asegurar un ajuste correcto de la imagen */
+}
+
+
+.about p {
+    margin-right: 0;
+    padding-right: 1.3;
+}
+
+.gallery {
+    background-image: url('img/FondoDePaginas\ gallery.jpg');
+    margin: auto;
+    padding: 2rem 1rem;
+    max-width: 100%;
+}
+
+
+
+.gallery .container h2 {
+    position: relative;
+    left: 0;
+    top: 4%;
+    text-align: center;
+    /* Centrar el texto */
+    color: rgba(237, 235, 218, 255);
+    /* Color blanco */
+    font-size: clamp(1.5rem, 4vw, 8.2rem);
+    /* Ajusta el tamaño de fuente */
+}
+
+
+.contact {
+    background-image: url('img/FondoDePaginas.jpg');
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.contact-section h2{
+    font-size: clamp(1.25rem, 4vw, 8.2rem);
+    text-align: center;
+    margin-bottom: 90px;
+    padding: 0;
+    display: block;
+    top: 4%;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: clamp(1rem, 10vw, 8rem);
+    transform: translateY(50px);
+}
+
+.hero-text p {
+    transform: translateY(90px);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+
+}
+
+.gallery h2 {
+    align-items: center;
+    font-size: clamp(1.5rem, 4vw, 8.2rem);
+    top: 4%;
+}
+
+.gallery-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    gap: 0;
+}
+.gallery-grid::-webkit-scrollbar{
+    display: none;
+}
+.gallery-grid {
+    position: relative;
+    padding-left: 5%; /* Usar porcentaje para un mejor ajuste en pantallas pequeñas */
+    gap: 2%; /* Espaciado dinámico entre los elementos */
+    display: flex;
+    flex-wrap: nowrap; /* Mantiene los elementos en una sola fila */
+    transition: transform 0.3s ease; /* Transición suave */
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    scroll-behavior: smooth; /* Suaviza el desplazamiento al hacer scroll */
+}
+
+.gallery-grid a {
+    flex: 0 0 20%; /* El ancho de los elementos será relativo al contenedor */
+    margin-right: 1%; /* Espacio entre imágenes como porcentaje */
+    max-width: 25rem; /* Establece un límite máximo para el ancho */
+    box-sizing: border-box; /* Asegura que los márgenes se incluyan en el tamaño total */
+}
+
+
+.gallery-grid img {
+    width: 100%;
+    /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
+}
+.espaciador{
+    min-width: 50px;
+}
+button {
+    background-color: rgba(41, 40, 40, 0.021);
+    border: 2px solid rgba(41, 40, 40, 0.021);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgba(237, 235, 218, 255);
+    font-size: 24px;
+    padding: 0.625rem 0.938rem;
+    transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0.625rem;
+}
+
+button.next {
+    right: 0.625rem;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.041);
+    transform: scale(1.05);
+}
+
+
+.image-title {
+    text-align: center;
+    /* Centra el texto */
+    color: white;
+    /* Color del texto */
+    font-size: 1.25rem;
+    /* Tamaño del texto */
+    margin-top: 5px;
+    /* Espacio entre la imagen y el título */
+    background-color: rgba(78, 74, 65, 0.5);
+    /* Fondo semi-transparente para mejor visibilidad */
+    padding: 0px;
+    /* Espaciado alrededor del texto */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    width: 100%;
+    /* Para que ocupe el ancho completo del contenedor */
+    position: relative;
+    /* Posiciona el título relativo a la imagen */
+    display: inline-block;
+    /* Cambia a inline-block para que el fondo se ajuste al contenido */
+    z-index: 5;
+    /* Asegura que el título esté encima */
+    margin-top: 5px;
+    /* Espacio entre la imagen y el título */
+}
+
+.gallery-grid a {
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+}
+.contact-section {
+    background-image: url("img/FondoDePaginas.jpg");
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Contenedor de los botones de contacto */
+.contact-buttons {
+    display: flex;
+    gap: 20px; /* Espaciado entre los botones */
+}
+
+/* Estilo general para los botones */
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff; /* Color de fondo predeterminado */
+    border: 2px solid #ffffff; /* Borde que coincide con el color de fondo */
+    border-radius: 50px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+    width: 150px; /* Ancho de los botones */
+    justify-content: center;
+    text-align: center;
+}
+
+/* Efecto de hover para los botones */
+.contact-button:hover {
+    background-color: white; /* Fondo blanco al pasar el mouse */
+    transform: scale(1.1); /* Agranda ligeramente el botón */
+}
+
+/* Estilos específicos para Instagram */
+.contact-button.instagram {
+    color: black;
+    background-color: #ffffff; /* Color de fondo de Instagram */
+}
+
+.contact-button.instagram:hover {
+    background-color: white;
+    color: #000000;
+}
+
+/* Estilos específicos para Gmail */
+.contact-button.gmail {
+    background-color: #ffffff; /* Color de fondo de Gmail */
+    border-color: #ffffff; /* Borde de Gmail */
+}
+
+.contact-button.gmail:hover {
+    background-color: white;
+    color: #000000;
+}
+
+/* Iconos de los botones */
+.contact-button i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #f8f8f8;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  /* Sección: Sobre Nosotros */
+  .footer-about {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .footer-description {
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+  
+  /* Sección: Enlaces Rápidos */
+  .footer-links {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f8f8f8;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    color: #bbb;
+  }
+  
+  .footer-list li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-list li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-list li a:hover {
+    color: #ffffff;
+  }
+  
+  /* Sección: Redes Sociales */
+  .footer-socials {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-social-icons li {
+    display: inline-block;
+  }
+  
+  .footer-social-icons a {
+    color: #bbb;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-social-icons a:hover {
+    color: #f8f8f8;
+  }
+  
+/* Sección: Suscripción al boletín */
+.footer-newsletter {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  
+ /* Aseguramos que el formulario se alinee correctamente en columna */
+.footer-newsletter-form {
+    display: block;        /* Usamos display:block para que cada elemento ocupe una nueva línea */
+    margin-top: 20px;       /* Espacio superior entre el formulario y otros elementos */
+    text-align: center;     /* Centrar los elementos dentro del formulario */
+  }
+  
+/* Estilos del input de correo electrónico */
+.footer-newsletter-form input {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-bottom: 10px;    /* Espacio entre el input y el botón */
+    width: 100%;            /* El input ocupa todo el espacio disponible */
+    max-width: 280px;       /* Máximo tamaño del input */
+    box-sizing: border-box; /* Asegura que el padding se sume al ancho total */
+  }
+  
+/* Estilos del botón de suscripción */
+.footer-newsletter-form button {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;            /* El botón ocupa el mismo tamaño que el input */
+    max-width: 280px;       /* Máximo tamaño del botón */
+    box-sizing: border-box; /* Asegura que el padding se sume al ancho total */
+    display: block;         /* Asegura que el botón esté en una nueva línea */
+    margin: 0 auto;         /* Centra el botón */
+  }
+  
+  /* Estilo al pasar el ratón sobre el botón */
+.footer-newsletter-form button:hover {
+    background-color: #ddd;
+  }
+
+  /* Información Legal */
+  .footer-legal {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  .footer-legal p {
+    margin: 5px 0;
+  }
+  
+  .footer-legal a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer-legal a:hover {
+    color: #f8f8f8;
+  }
+  
+  .contact-buttons {
+    display: flex;
+    flex-direction: column; /* Organiza las filas una debajo de la otra */
+    gap: 50px; /* Espaciado entre filas basado en el tamaño del contenedor */
+}
+
+
+.contact-row {
+    display: flex; /* Coloca el botón y la frase en la misma línea */
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 5%; /* Espaciado entre el botón y su frase basado en el ancho del contenedor */
+    font-size: clamp(1rem, 4vw, 2.4rem); /* Tamaño de fuente relativo al ancho de la ventana */
+}
+
+
+.contact-row a {
+    flex-shrink: 0; /* Asegura que el botón mantenga su tamaño fijo */
+    display: inline-block; /* Hace que el botón sea un bloque en línea */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: bold; /* Resalta los botones */
+    background-color: #f4f4f4; /* Color de fondo */
+    padding: 3% 4%; /* Incrementa el tamaño del botón basado en porcentajes */
+    border-radius: 22%; /* Bordes redondeados en relación al tamaño del botón */
+    color: #333; /* Color del texto */
+    font-size: clamp(0.4rem, 3vw, 1rem); /* Tamaño de la fuente relativo al ancho de la ventana */
+    text-align: center; /* Centra el texto dentro del botón */
+
+}
+
+
+.contact-section p {
+    margin: 0; /* Elimina márgenes adicionales */
+    font-size: clamp(1rem, 3.5vw, 3rem); /* Tamaño de texto más pequeño para las frases */
+    color: 237, 235, 218, 255; /* Color del texto */
+}
+@media (max-width:499px){
+    .nav-links {
+        right: 0;
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column; /* Permite que el menú sea vertical en pantallas pequeñas */
+        background: rgba(153, 153, 153, 0.205); /* Fondo del menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta la posición del menú desplegable */
+        width: 100%;
+        padding: 20px 0;
+        z-index: 1000;
+        font-size: 30px;
+    }
+
+    .nav-links.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa */
+    }
+
+    .about p{
+        transform: translateY(-70%);
+    }
+    .about img {
+        width: 37%; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        object-fit: cover; /* Asegura que la imagen no se distorsione */
+        border-radius: 40%; /* Esto hace que la imagen sea circular */
+        border: 4px solid #fff; /* Borde blanco alrededor de la imagen */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil para un efecto elegante */
+        transform: translateY(75%) translateX(78%);
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-grid a {
+        flex: 0 0 240px;
+        margin-right: 0;
+    }
+
+    .gallery-grid {
+        position: relative;
+        gap: 1.3rem;
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding-left: 30px;  /* Añadir más espacio en el inicio */
+        padding-right: 30px; /* Añadir más espacio al final */
+        width: calc(70% - 60px); /* Ajustar el ancho para que el padding no afecte */
+    }
+
+    /* Contenedor de las categorías */
+    .gallery-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media (max-width:430px){
+    .nav-links {
+        right: 0;
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column; /* Permite que el menú sea vertical en pantallas pequeñas */
+        background: rgba(153, 153, 153, 0.205); /* Fondo del menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta la posición del menú desplegable */
+        width: 100%;
+        padding: 20px 0;
+        z-index: 1000;
+        font-size: 30px;
+    }
+
+    .nav-links.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa */
+    }
+    
+    .about p{
+        transform: translateY(-70%);
+    }
+    .about img {
+        width: 43%; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        object-fit: cover; /* Asegura que la imagen no se distorsione */
+        border-radius: 40%; /* Esto hace que la imagen sea circular */
+        border: 4px solid #fff; /* Borde blanco alrededor de la imagen */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil para un efecto elegante */
+        transform: translateY(75%) translateX(65%);
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-grid a {
+        flex: 0 0 240px;
+        margin-right: 0;
+    }
+
+    .gallery-grid {
+        position: relative;
+        gap: 1.3rem;
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding-left: 30px;  /* Añadir más espacio en el inicio */
+        padding-right: 30px; /* Añadir más espacio al final */
+        width: calc(70% - 60px); /* Ajustar el ancho para que el padding no afecte */
+    }
+
+    /* Contenedor de las categorías */
+    .gallery-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media ( max-width: 375px){
+    .nav-links {
+        right: 0;
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column; /* Permite que el menú sea vertical en pantallas pequeñas */
+        background: rgba(153, 153, 153, 0.205); /* Fondo del menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta la posición del menú desplegable */
+        width: 100%;
+        padding: 20px 0;
+        z-index: 1000;
+        font-size: 30px;
+    }
+
+    .nav-links.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa */
+    }
+    
+    .about p{
+        transform: translateY(-45%);
+    }
+    
+
+    .about img{
+        width: 45%;
+        transform: translateY(85%) translateX(55%);
+    }
+    .gallery-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-grid a {
+        flex: 0 0 200px;
+        margin-right: 0;
+    }
+
+    .gallery-grid {
+        position: relative;
+        gap: 1.3rem;
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding-left: 30px;  /* Añadir más espacio en el inicio */
+        padding-right: 30px; /* Añadir más espacio al final */
+        width: calc(56% - 60px); /* Ajustar el ancho para que el padding no afecte */
+    }
+
+    /* Contenedor de las categorías */
+    .gallery-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:320px){
+    .nav-links {
+        right: 0;
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column; /* Permite que el menú sea vertical en pantallas pequeñas */
+        background: rgba(153, 153, 153, 0.205); /* Fondo del menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta la posición del menú desplegable */
+        width: 100%;
+        padding: 20px 0;
+        z-index: 1000;
+        font-size: 30px;
+    }
+
+    .nav-links.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa */
+    }
+
+    
+    .about p{
+        transform: translateY(-45%);
+    }
+    
+
+    .about img{
+        width: 45%;
+        transform: translateY(110%) translateX(52%);
+    }
+    .gallery-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-grid a {
+        flex: 0 0 200px;
+        margin-right: 0;
+    }
+
+    .gallery-grid {
+        position: relative;
+        gap: 1.3rem;
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding-left: 30px;  /* Añadir más espacio en el inicio */
+        padding-right: 30px; /* Añadir más espacio al final */
+        width: calc(56% - 60px); /* Ajustar el ancho para que el padding no afecte */
+    }
+
+    /* Contenedor de las categorías */
+    .gallery-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

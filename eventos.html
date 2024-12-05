@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría Eventos</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <ul><li><a href="#home"> <img src="img/LogoPagina1.png" alt="Logo" /></a></li></ul>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#about">Sobre mí</a></li>
+                <li><a href="index.html#gallery">Catálogo</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Botón de menú hamburguesa -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="category-gallery">
+            <h2>Eventos</h2>
+            <div class="gallery-section">
+                <div class="gallery-container">
+
+                    <img src="img/Evento/1/bodypainting-29.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-149.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-162.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-194.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-195.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-224.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-241.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-258.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-263.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-264.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-285.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-302.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-304.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-315.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-89.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/1/bodypainting-192.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                </div>
+                <div class="gallery-section">
+                <div class="gallery-container">
+                    <img src="img/Evento/2/IMG_5626.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/2/IMG_5615.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/2/IMG_5628.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/2/IMG_5629.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                </div>
+            </div>
+            <div class="gallery-section">
+                <div class="gallery-container">
+                    <img src="img/Evento/3/cumplePatricia-57.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-67.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-544.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-566.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-570.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-594.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-614.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-621.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-662.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-690.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-804.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-828.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-38.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Evento/3/cumplePatricia-664.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                </div>        
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img class="lightbox-content" id="lightbox-img">
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

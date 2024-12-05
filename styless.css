@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@font-face {
+    font-family: Bold, Fat, Retro, Serif, Slab, Western, Wood Type, Woodcut;
+    src: url(fuentes/ChunkFive-Regular.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+
+
+
+body {
+    background-image: url('img/FondoDePaginas.jpg');
+    margin: 0;
+    overflow-x: hidden;
+    color: rgba(237, 235, 218, 255);
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: rgba(153, 153, 153, 0.116);
+    box-shadow: 3px 3px  rgba(237, 235, 218, 255);
+    padding: 0.625rem 1.875rem;
+    font-size: clamp(0.8rem, 2.5vw, 2.188rem);
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.navbar li {
+    margin-left: 1rem;
+}
+
+.navbar ul li :hover{
+    background-color: rgba(255, 255, 255, 0.041);
+    transform: scale(1.05);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(237, 235, 218, 255);
+    font-weight: bold;
+    transition: color 0.2.8s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.548);
+    transform: scale(1.05);
+    border-radius: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-toggle {
+    right: 0;
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: rgba(237, 235, 218, 255);
+    cursor: pointer;
+}
+
+
+.logo img {
+    width: clamp(9rem, 11vw, 20rem);
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.288);
+    transform: scale(1.05);
+}
+
+/* Gallery Styles */
+.category-gallery {
+    text-align: center;
+    margin-top: 100px;
+    /* Compensar el header fijo */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    /* Zoom al pasar el ratón */
+}
+
+
+.gallery-item:hover .image-title {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Cambio de color al pasar el ratón */
+}
+
+.lightbox-content:hover {
+    transform: scale(1.0);
+
+}
+
+
+
+
+/* Estilos para la galería */
+.category-gallery {
+    /* Ajusta el padding superior (50px) para menos espacio con el navbar */
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    /* Múltiples columnas */
+    grid-gap: 15px;
+    justify-content: center;
+    margin-bottom: 120px;
+    gap: 5px;
+}
+
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+.category-gallery h2 {
+    color: rgba(237, 235, 218, 1);
+    /* Color del texto */
+    font-size: 4rem;
+    /* Tamaño más grande del texto */
+    margin:0;
+    text-align: center;
+
+}
+
+.gallery-section {
+    margin-bottom: 40px; /* Espacio entre cada grupo de tres filas */
+}
+
+.firtsc {
+color: #007BFF;
+}
+
+
+.gallery-large img {
+    width: 190px; /* Ajusta el tamaño de las imágenes de la tercera fila */
+    height: auto;
+    grid-gap: 200px;
+}
+
+
+.lightbox {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: #ffffff; /* Color de las letras del navbar */
+    background-color: rgba(0, 0, 0, 0.171); /* Fondo semi-transparente */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%); /* Centra los botones verticalmente */
+    transition: all 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Efecto de hover para los botones */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.241); /* Fondo más oscuro al pasar el mouse */
+    transform: translateY(-50%) scale(1.1); /* Agranda ligeramente el botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171); /* Añade sombra cuando el mouse pasa sobre el botón */
+}
+
+/* Efecto de foco para accesibilidad */
+.prev:focus, .next:focus {
+    outline: 2px solid #ffffff; /* Contorno blanco cuando está en foco */
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .nav-links {
+        right: 0;
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column; /* Permite que el menú sea vertical en pantallas pequeñas */
+        background: rgba(153, 153, 153, 0.205); /* Fondo del menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta la posición del menú desplegable */
+        width: 100%;
+        padding: 20px 0;
+        z-index: 1000;
+        font-size: 30px;
+    }
+
+    .nav-links.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa */
+        transform: translateX(0%);
+    }
+    .gallery-container img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 320px) {
+    .nav-links {
+        right: 0;
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column; /* Permite que el menú sea vertical en pantallas pequeñas */
+        background: rgba(153, 153, 153, 0.205); /* Fondo del menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta la posición del menú desplegable */
+        width: 100%;
+        padding: 20px 0;
+        z-index: 1000;
+        font-size: 30px;
+    }
+
+    .nav-links.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa */
+    }
+    .gallery-container img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría Embarazo y Familia</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <ul><li><a href="index.html#home"> <img src="img/LogoPagina1.png" alt="Logo" /></a>  </li> </ul>
+            </div>
+            <ul>
+                <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#about">Sobre mí</a></li>
+                <li><a href="index.html#gallery">Catálogo</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="category-gallery">
+            <h2>Retratos</h2>
+            <div class="gallery-section">
+                <div class="gallery-container">
+
+                    <img src="img/embarazo y familia/1/fotoembarazo-8.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-20.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-29.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-34.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-38.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-41.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-84.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-122.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-130.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-142.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/embarazo y familia/1/fotoembarazo-93.jpg" style="width: 575px;" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                </div>
+                <div class="gallery-section">
+                    <div class="gallery-container">
+
+                        <img src="img/embarazo y familia/2/IMG_3232.JPG" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                        <img src="img/embarazo y familia/2/IMG_3248.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                        <img src="img/embarazo y familia/2/IMG_3258.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                        <img src="img/embarazo y familia/2/IMG_3285.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                        <img src="img/embarazo y familia/2/IMG_3291.JPG" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                        <img src="img/embarazo y familia/2/IMG_3303.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    </div>       
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img class="lightbox-content" id="lightbox-img">
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

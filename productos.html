@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría Productos</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <ul><li><a href="index.html#home"> <img src="img/LogoPagina1.png" alt="Logo" /></a>  </li> </ul>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#about">Sobre mí</a></li>
+                <li><a href="index.html#gallery">Catálogo</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Botón de menú hamburguesa -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="category-gallery">
+            <h2>Productos</h2>
+            <div class="gallery-section">
+                <div class="gallery-container">
+                    <img src="img/Producto/valenfotografa-296.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Producto/valenfotografa-303.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Producto/valenfotografa-318.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Producto/valenfotografa-288.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                    <img src="img/Producto/valenfotografa-290.jpg" alt="Imagen naturaleza" onclick="openLightbox(this)">
+                </div>
+                
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img class="lightbox-content" id="lightbox-img">
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
